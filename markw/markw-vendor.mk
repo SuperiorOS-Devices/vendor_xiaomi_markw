@@ -387,7 +387,6 @@ PRODUCT_COPY_FILES += \
 
 # blobs from other devices
 PRODUCT_COPY_FILES += \
-    vendor/xiaomi/markw/proprietary/vendor/bin/time_daemon:$(TARGET_COPY_OUT_VENDOR)/bin/time_daemon \
     vendor/xiaomi/markw/proprietary/vendor/etc/thermal-engine.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine.conf \
     vendor/xiaomi/markw/proprietary/vendor/lib/libmmcamera_s5k3l8.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera_s5k3l8.so \
     vendor/xiaomi/markw/proprietary/vendor/lib/libmmcamera2_c2d_module.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmcamera2_c2d_module.so \
@@ -469,7 +468,5 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/markw/proprietary/vendor/firmware/venus.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/venus.mdt
 
 PRODUCT_PACKAGES += \
-    libtime_genoff \
     libts_detected_face_hal \
-    libts_face_beautify_hal \
-    TimeService
+    libts_face_beautify_hal
